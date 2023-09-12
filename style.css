@@ -1,0 +1,242 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+.nav{
+    background-color: #6391ac; 
+    height: 70px; 
+    color: black; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+  
+}
+
+.links-nav{
+    display: inline-flex ;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    text-align: center;
+    margin-left: 0px;
+
+}
+
+.links-nav li{
+    margin-right: 20px;
+}
+
+.links-nav a{
+    color: black;
+    text-decoration: none;
+}
+
+.btn{
+    background-color: #2799b0;
+    border: 3px solid black;
+    text-align: right;
+    padding: 5px;
+}
+
+/* aqui comienza div de Priscial Espinoza*/
+
+.page-body {
+    height: 150px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 30px; 
+}
+
+.card {
+    width: 500px;
+    border: 1px solid gray;
+    margin: 0;
+}
+
+.card-header {
+    height: 80px;
+    background-color: #7dbad4;
+}
+
+.card-body { 
+    height: 150px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
+
+.icono {
+    width: 12px;
+    height: 15px;
+    margin-left: 3px;
+    margin-top: 5px;
+    
+}
+
+.imagen-usuario {
+    width: 60px;
+    border: 3px solid lightgray;
+    border-radius: 50px;
+    position: relative;
+    top: 45px;
+    left: 25px;
+}
+
+.name{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.mapa{
+    height: 20px;
+}
+.city{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.estudios{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.editar{
+    margin-top: 1px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+.page-body {
+    display: flex;
+    flex-direction: row;
+}
+
+/*aqui comienza mi div Educación*/
+
+.educacion-header {
+    background-color: white ;
+    color: black;
+    height: 250px;
+    border: 1px solid gray;
+    padding: 0px;
+    margin-top: 15px;  
+}
+
+#h4-educacion{
+    background-color: #7dbad4;
+    padding: 15px;
+    color: black;
+}
+.card-educacion{
+    padding: 20px;
+}
+
+.info-educacion   {
+   text-align: justify;
+   line-height: 50px;
+}
+
+.cursos {
+    font-weight: bold;
+    line-height: 50px;
+}
+
+/* aqui comienza soliciudes de amistad*/
+
+.solicitudes-pendientes {
+    background-color: #7dbad4;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: space-evenly;
+    border: 2px solid gray;
+}
+
+.solicitud-amistad {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+.solicitud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.aceptar-rechazar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.imagen-nombre {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.aceptar-rechazar-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.nombre-newsol {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.card-amigos {
+    background-color: #7dbad4;
+    display: flex;
+    border: 2px solid gray;
+}
+
+.solicitud {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+
+
+
+
+.solicitudes {
+    background-color: white;
+}
+
+
+
+.amigos {
+    border: 2px solid gray;
+    display: block;
+    
+    
+
+}
+
+.imagen-amigo {
+    width: 15px;
+    border-radius: 50%;
+    flex-direction: row;
+    
+}
+.view-more {
+    text-decoration: underline;
+    color: blue;
+}

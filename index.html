@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <h1 class="title">Profile</h1>
+        <ul class="links-nav">
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">My Profile</a></li>
+            <li> <a href="#">Find Conecctions</a></li>
+        </ul>
+        <button class="btn">Sing Out</button>
+    </div>
+
+    <!-- aqui termina la barra de navgación-->
+
+    <!-- empieza el container principal-->
+
+    <div class ="page-body"> <!-- esta es mi caja principal-->
+        <div class="columna-izquierda"> <!-- esta es mi caja con los datos-->
+            <div class="card">
+                <div class="card-header">
+                    <img src="user-circle.png" alt="Imagen de ususario" class="imagen-usuario">
+                </div>
+                <br>
+                <div class="card-body">
+                    <h1 class="name">Priscila Espinoza Reyes</h1>
+                    <h3 class="city">
+                    <img src="map-marker.png" alt="mapa" class="mapa">
+                    Santiago, Chile
+                    </h3>
+                    <p class="estudios">
+                    Analista Programador | Desarrolladora de Software<br>
+                    FullStack Python | C#.net
+                    </p>
+                    <a href="#" class="editar">
+                    <img src="gear.png" alt="engrane" class="icono">
+                    editar perfil
+                    </a>
+                </div>
+            </div>
+            
+            <!-- aqui comienza div Educación-->
+            <div class="educación">
+                <div class="educacion-header">
+                    <h3 id="h4-educacion"> Educación </h3>
+                    
+                <div class="card-educacion">
+                    <h3 class="info-educacion"> Coding Dojo - Full Stack Bootcamp Python</h3>
+                    <h4 class="fecha"> Agosto 2022 - Octubre 2022</h4>
+                    
+                    <h3 class="cursos"> Coding Dojo - Bootcamp C#.Net </h3>
+                    <h4 class="fecha"> Septiembre 2023 - Noviembre 2023</h4>
+                </div>
+            </div>  
+            </div>
+        </div>    
+
+            <!--empieza solicitud de amistad-->
+            <div class="solicitudes">
+                <h4 class="solicitudes-pendientes">2 Connection Requests</h4>
+                <div class="solicitud-amistad">
+                    <div class="solicitud">
+                        <a class="nombre-newsol">
+                            <img src="user-circle.png" alt="img-tood" class="imagen-nombre">Tood E
+                        </a>
+                        <div class="aceptar-rechazar">
+                            <img src="accept-circle.png" alt="Aceptar" class="aceptar-rechazar-icon">
+                            <img src="close-circle.png" alt="Cancelar" class="aceptar-rechazar-icon">
+                        </div>
+                    </div>
+                    <div class="solicitud">
+                        <a class="nombre-newsol">
+                            <img src="user-circle.png" alt="img-phill" class="imagen-nombre">Phill K
+                        </a>
+                        <div class="aceptar-rechazar">
+                            <img src="accept-circle.png" alt="Aceptar" class="aceptar-rechazar-icon">
+                            <img src="close-circle.png" alt="Cancelar" class="aceptar-rechazar-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--tus conecciones -->
+            <div class="amigos">
+                <div class="card-amigos">
+                    <h4 class="amistades"> 500 + Your Connectios</h4>
+                </div>
+
+                <div class="amigos">
+                        <a><img src="user-circle.png" alt="Imagen Adrian" class="imagen-amigo"> Adried D</a>
+                        <a><img src="user-circle.png" alt="Imagen Anne" class="imagen-amigo"> Anne J</a>
+                        <a><img src="user-circle.png" alt="Imagen Alayne" class="imagen-amigo"> Alayne T</a>
+                        <a><img src="user-circle.png" alt="Imagen Arry" class="imagen-amigo"> Arry Y</a>
+                    </div>
+                </div>
+                <br>
+                <div class="view-more"> View More</div>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+</body>
+</html>
