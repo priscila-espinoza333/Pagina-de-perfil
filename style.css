@@ -185,6 +185,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 .aceptar-rechazar-icon {
@@ -198,45 +199,35 @@
 }
 
 
-
+/*aqui comienza your connections*/
 .card-amigos {
     background-color: #7dbad4;
-    display: flex;
+    display: grid;
     border: 2px solid gray;
 }
 
-.solicitud {
-    display: flex;
-    flex-direction: row;
+.amistades{
+    background-color: #7dbad4;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: space-evenly;
+    border: 2px solid gray;
+    
+}
+.amigos{
+    display: grid;
     align-items: center;
-    
-}
-
-
-
-
-
-.solicitudes {
-    background-color: white;
-}
-
-
-
-.amigos {
     border: 2px solid gray;
-    display: block;
-    
-    
-
+}
+.nombre-amis {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
 }
 
-.imagen-amigo {
-    width: 15px;
-    border-radius: 50%;
-    flex-direction: row;
-    
-}
 .view-more {
     text-decoration: underline;
     color: blue;
+    flex-direction: column;
+    margin-top: 30px;
 }
