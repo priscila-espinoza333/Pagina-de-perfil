@@ -59,7 +59,7 @@
     margin: 0;
 }
 
-.card-header {
+.cards-header {
     height: 80px;
     background-color: #7dbad4;
 }
@@ -147,30 +147,13 @@
 }
 
 /* aqui comienza soliciudes de amistad*/
-
-.solicitudes-pendientes {
+.cards-header-solicitud{
+    height: 80px;
     background-color: #7dbad4;
+    padding: 5px;
+    color: #f3f3f3;
     display: flex;
-    flex-direction: column;
-    padding: 15px;
-    justify-content: space-evenly;
-    border: 2px solid gray;
-}
-
-.solicitud-amistad {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border: 2px solid gray;
-    padding: 10px;
-}
-
-.solicitud {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    border: none;
-    margin-bottom: 10px;
 }
 
 .aceptar-rechazar {
@@ -189,45 +172,87 @@
 }
 
 .aceptar-rechazar-icon {
-    width: 20px;
     height: 20px;
+    border-radius: 20%;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
-.nombre-newsol {
+.card-list {
+    padding: 0 20px;
+    padding-top: 20px;
+    list-style-type: none;
+    border: 2px solid gray;
+}
+
+.card-list-item, 
+.card-list-item > * {
     display: flex;
     align-items: center;
+}
+
+.card-list-item {
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.card-list-item.start {
+    justify-content: flex-start;
+}
+
+.aceptar-rechazar-icon {
+    height: 20px;
+    margin-left: 15px;
+}
+
+.aceptar-rechazar-icon .btn {
+    cursor: pointer;
+}
+
+.aceptar-rechazar-icon:last-child {
+    margin-right: 0;
+}
+
+.badge {
+    font-size: 1rem;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    background-color: #999;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.extra {
+    background-color: blue;
 }
 
 
 /*aqui comienza your connections*/
-.card-amigos {
-    background-color: #7dbad4;
-    display: grid;
-    border: 2px solid gray;
-}
 
-.amistades{
-    background-color: #7dbad4;
-    flex-direction: column;
-    padding: 15px;
-    justify-content: space-evenly;
-    border: 2px solid gray;
+.box {
+    background-color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
     
 }
-.amigos{
-    display: grid;
-    align-items: center;
-    border: 2px solid gray;
-}
-.nombre-amis {
+
+.box-header {
+    padding: 20px;
+    color: #f3f3f3;
+    margin-top: 20px;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    background-color:  #7dbad4;
 }
+
 
 .view-more {
     text-decoration: underline;
     color: blue;
     flex-direction: column;
-    margin-top: 30px;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid gray;
+    
 }

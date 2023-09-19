@@ -11,26 +11,22 @@
     <div class="nav">
         <h1 class="title">Profile</h1>
         <ul class="links-nav">
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#">My Profile</a></li>
-            <li> <a href="#">Find Conecctions</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Find Conecctions</a></li>
         </ul>
-        <button class="btn">Sing Out</button>
+        <button class="btn" onclick="logout(this)">Sing Out</button>
     </div>
 
-    <!-- aqui termina la barra de navgación-->
-
-    <!-- empieza el container principal-->
-
-    <div class ="page-body"> <!-- esta es mi caja principal-->
-        <div class="columna-izquierda"> <!-- esta es mi caja con los datos-->
+    <div class ="page-body"> 
+        <div class="columna-izquierda"> 
             <div class="card">
-                <div class="card-header">
+                <div class="cards-header">
                     <img src="user-circle.png" alt="Imagen de ususario" class="imagen-usuario">
                 </div>
                 <br>
                 <div class="card-body">
-                    <h1 class="name">Priscila Espinoza Reyes</h1>
+                    <h1 class="name" id="user-name"> Priscila Espinoza Reyes </h1>
                     <h3 class="city">
                     <img src="map-marker.png" alt="mapa" class="mapa">
                     Santiago, Chile
@@ -61,47 +57,69 @@
             </div>  
             </div>
         </div>    
-
-            <!--empieza solicitud de amistad-->
+        <div  class="col-1">
+            <!--empieza solicitud de amistad -->
             <div class="solicitudes">
-                <h4 class="solicitudes-pendientes">2 Connection Requests</h4>
-                <div class="solicitud-amistad">
-                    <div class="solicitud">
-                        <a class="nombre-newsol">
-                            <img src="user-circle.png" alt="img-tood" class="imagen-nombre">Tood E
-                        </a>
-                        <div class="aceptar-rechazar">
-                            <img src="accept-circle.png" alt="Aceptar" class="aceptar-rechazar-icon">
-                            <img src="close-circle.png" alt="Cancelar" class="aceptar-rechazar-icon">
-                        </div>
-                    </div>
-                    <div class="solicitud">
-                        <a class="nombre-newsol">
-                            <img src="user-circle.png" alt="img-phill" class="imagen-nombre">Phill K
-                        </a>
-                        <div class="aceptar-rechazar">
-                            <img src="accept-circle.png" alt="Aceptar" class="aceptar-rechazar-icon">
-                            <img src="close-circle.png" alt="Cancelar" class="aceptar-rechazar-icon">
-                        </div>
-                    </div>
+                <div class="cards-header-solicitud" onmouseover="cambiarFondo(this)" onmouseout="quitarFondo(this)">
+                    <span id="connectionRequestNumber" class="badge">2</span>
+                    <h4>Connection Request</h4>
                 </div>
+                <ul class="card-list">
+                    <li class="card-list-item">
+                        <span>
+                            <img src="user-circle.png" alt="img-tood" class="imagen-nombre">Tood E
+                        </span>    
+                        <span class="aceptar-rechazar">
+                            <img onclick="agregarConexion(this)" src="accept-circle.png" alt="Aceptar" class="aceptar-rechazar-icon">
+                            <img onclick="removerConexion(this)" src="close-circle.png" alt="Cancelar" class="aceptar-rechazar-icon">
+                        </span>
+                    </li>
+                    <li class="card-list-item">
+                        <span>
+                            <img src="user-circle.png" alt="img-tood" class="imagen-nombre">Phill K
+                        </span>    
+                        <span class="aceptar-rechazar">
+                            <img onclick="agregarConexion(this)" src="accept-circle.png" alt="Aceptar" class="aceptar-rechazar-icon">
+                            <img onclick="removerConexion(this)" src="close-circle.png" alt="Cancelar" class="aceptar-rechazar-icon">
+                        </span>
+                    </li>
+                </ul>
             </div>
-            <!--tus conecciones -->
-            <div class="your-conecctions">
-                <h4 class="amistades"> 500 + Your Connectios</h4>
-                <div class="amigos">
-                    <a class="nombre-amis"><img src="user-circle.png" alt="Imagen Adrian" class="imagen-nombre"> Adried D</a>
-                        <a class="nombre-amis"><img src="user-circle.png" alt="Imagen Anne" class="imagen-nombre"> Anne J</a>
-                        <a class="nombre-amis"><img src="user-circle.png" alt="Imagen Alayne" class="imagen-nombre"> Alayne T</a>
-                        <a class="nombre-amis"><img src="user-circle.png" alt="Imagen Arry" class="imagen-nombre"> Arry Y</a>
-                    </div>
-                </class=>
-                <div class="view-more"> View More</div>
+
+            <!--tus conecciones  -->
+            <div class="box">
+                <div class="box-header" onmouseover="cambiarFondo(this)" onmouseout="quitarFondo(this)">
+                    <span id="totalConnections" class="badge">418</span>
+                    <h3>Your Connections</h3>
+                </div>
+                <ul class="card-list" id="myConnections">
+                    <li class="card-list-item start">
+                        <img src="user-circle.png" alt="adrien" class="imagen-nombre">
+                        Adrien D
+                    </li>
+                    <li class="card-list-item start">
+                        <img src="user-circle.png" alt="anne" class="imagen-nombre">
+                        Anne J
+                    </li>
+                    <li class="card-list-item start">
+                        <img src="user-circle.png" alt="alayne" class="imagen-nombre">
+                        Alayne T
+                    </li>
+                    <li class="card-list-item start">
+                        <img src="user-circle.png" alt="arry" class="imagen-nombre">
+                        Arry Y
+                    </li>
+                </ul>
+                <div class="view-more">
+                    <a href="#" onclick="verMas(this)">View More</a>
             </div>
+        </div>        
+
             
             
-        </div>
+            </div>
     </div>
+    <script src="index.js"></script>
     
 </body>
 </html>>
